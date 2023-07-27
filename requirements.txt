@@ -1,0 +1,16 @@
+The required Python packages for this program are:
+
+- requests
+- pandas
+- numpy
+- matplotlib
+- sklearn
+- heapq
+
+You can install these packages using pip:
+
+```
+pip install requests pandas numpy matplotlib scikit-learn
+```
+
+Note that scikit-learn (sklearn) is a package that includes various sub-packages, such as preprocessing, cluster, metrics, ensemble, model_selection, and decomposition, which are used in this program.
