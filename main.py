@@ -18,9 +18,13 @@ class CustomerBehaviorAnalysis:
 
     def gather_data_from_api(self, url):
         headers = {'Authorization': f'Bearer {self.api_key}'}
-        response = requests.get(url, headers=headers)
-        data = response.json()
-        return data
+        try:
+            response = requests.get(url, headers=headers)
+            data = response.json()
+            return data
+        except Exception as e:
+            print(f"Error: {e}")
+            return None
 
     def gather_data_from_web_scraping(self, url):
         # Implement your web scraping logic
